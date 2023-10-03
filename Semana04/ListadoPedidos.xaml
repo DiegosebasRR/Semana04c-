@@ -1,0 +1,24 @@
+﻿<Window x:Class="Semana04.ListadoPedidos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana04"
+        mc:Ignorable="d"
+        Title="ListadoPedidos" Height="450" Width="370">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Fecha de Inicio:" />
+            <TextBox x:Name="txtFechaInicio" />
+
+            <TextBlock Text="Fecha de Fin" />
+            <TextBox x:Name="txtFechaFin" />
+
+            <Button Content="Buscar" Click="BuscarPedidos_Click" Margin="0,10,0,0" />
+
+            <DataGrid x:Name="dataGridPedidos" AutoGenerateColumns="True" />
+         
+        </StackPanel>
+    
+    </Grid>
+</Window>

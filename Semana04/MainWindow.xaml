@@ -1,0 +1,25 @@
+﻿<Window x:Class="Semana04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana04"
+        mc:Ignorable="d"
+        Title="Listado de Proveedores" Height="400" Width="950">
+   <Grid>
+        <StackPanel Margin="10">
+        
+            <Button Content="Listar Detalles de Pedidos Por Fecha" Click="Button_Click"/>
+            <TextBlock Text="Nombre de Contacto:" />
+            <TextBox x:Name="txtNombreContacto" />
+
+            <TextBlock Text="Ciudad:" />
+            <TextBox x:Name="txtCiudad" />
+
+            <Button Content="Buscar" Click="BuscarProveedores_Click" Margin="0,10,0,0" />
+
+            <DataGrid x:Name="dataGridProveedores" AutoGenerateColumns="True" />
+        </StackPanel>
+       
+    </Grid>
+</Window>
